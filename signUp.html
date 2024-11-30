@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>sign up</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <link rel="stylesheet" href="css/signUp.css" />
+</head>
+<body class="bg-dark">
+    <div class="container">
+      <div class="block p-5 mt-5 rounded-2 shadow-lg">
+        <h1 class="text-white">Smart Login</h1>
+        <div class="form">
+         <input
+            type="text"
+            name="userName"
+            class="mt-3 p-2 rounded-1 border border-secondary w-100 bg-transparent form-control "
+            data-bs-theme="dark"
+            placeholder="Enter your name"
+            id="name"
+            required
+          />
+          <input
+            type="email"
+            name="email"
+            class="mt-3 p-2 rounded-1 border border-secondary w-100 bg-transparent text-white form-control"
+            data-bs-theme="dark"
+            placeholder="Enter Email"
+            id="email"
+            required
+          />
+          <input
+            type="password"
+            name="password"
+            class="my-3 p-2 rounded-1 border border-secondary w-100 bg-transparent text-white form-control"
+            data-bs-theme="dark"
+            placeholder="Enter password"
+            id="password"
+            required
+          />
+          <input type="checkbox" id="check" name="checkbox">
+          <label class="text-white" id="checkLabel" for="check">Show password</label>
+          <button type="button" class="btn btn-outline-info w-100 my-3" onclick=" signUp() ">
+            Sign up
+          </button>
+          <p class="text-white text-center">
+          <a class="text-info" href="index.html">>> login now >></a>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <script src="js/signUp.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+  </body>
+</html>
